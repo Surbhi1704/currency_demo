@@ -47,7 +47,7 @@ class CurrentConverterController extends GetxController {
     if (response.statusCode == 200) {
       result.value = (int.parse(amount) * responseData['conversion_rate']).toDouble();
 
-      tempList.add('$amount $base => ${result.value.toString()} $target');
+      tempList.add('$amount $base => ${result.value.toStringAsFixed(2)} $target');
 
       
       if (tempList.length > 5) {

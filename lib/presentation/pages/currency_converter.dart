@@ -103,7 +103,7 @@ class CurrencyConverterScreen extends StatelessWidget {
                   child: Text("Convert")),
               if (controller.result.value != null && controller.result.value != "")
                 Obx(() => Text(
-                      '${controller.baseValue} to ${controller.targetValue} => ${controller.result.value.toString()}',
+                      '${controller.baseValue} to ${controller.targetValue} => ${controller.result.value.toStringAsFixed(2)}',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
