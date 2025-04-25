@@ -20,6 +20,6 @@ class SharedPref {
 
  static  getHistoryList()  {
   
-    return _prefs!.getString(historyData)!;
+    return _prefs!.getString(historyData)??'[]';
   }
 }
